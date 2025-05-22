@@ -19,7 +19,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; /* Ekran küçülünce taşmasın */
+  
 }
+
 
 /* Logo kısmı */
 .nav > a {
@@ -28,7 +30,9 @@ body {
   font-weight: bold;
   color: #4d5ae5;
   text-decoration: none;
-  margin-left: 50px;
+  left: 156px;
+  position: absolute;
+ 
 }
 
 .nav > a span {
@@ -49,6 +53,8 @@ body {
   left: 347px;
   width: 261px;
   height: 24px;
+  
+  
 }
 
 /* Menü linkleri */
@@ -61,6 +67,8 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  width: 66px;
+  height: 24px;
 }
 
 .nav ul li a:hover {
@@ -72,14 +80,25 @@ body {
 }
 
 /* İletişim kısmı */
-.address {
-  font-family: "roboto";
+.address ul {
+  list-style: none;
+  display: flex;
+  
+  margin: 0;
+  padding: 0;
+  left: 940px;
+  top: 24px;
+  position: absolute;
+  
 }
+
+
 
 .address ul li a {
   color: #434455;
   text-decoration: none;
   transition: color 0.3s;
+  
 }
 
 .address ul li a:hover {
