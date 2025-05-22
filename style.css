@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto; /* İçeriğe göre uzar */
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #e7e9fc;
+  color: white;
+  height: 72px;
+  width: 100%;
+}
+
+/* Navbar içeriği hizalama */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ekran küçülünce taşmasın */
+}
+
+/* Logo kısmı */
+.nav > a {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: bold;
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.nav > a span {
+  color: #2e2f42; /* "STUDİO" farklı renkte */
+  top: 24px;
+  width: 115px;
+  height: 24px;
+  left: 156px;
+  font-family: "Raleway";
+}
+
+/* Menü listesi */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  top: 24px;
+  left: 347px;
+  width: 261px;
+  height: 24px;
+}
+
+/* Menü linkleri */
+.nav ul li a {
+  font-family: "roboto";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #2e2f42;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #4d5ae5;
+}
+.nav ul li a:hover,
+.nav ul li a:active {
+  color: #404bbf;
+}
+
+/* İletişim kısmı */
+.address {
+  font-family: "roboto";
+}
+
+.address ul li a {
+  color: #434455;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.address ul li a:hover {
+  color: #4d5ae5;
+}
+
+.baslık {
+  background-color: #2e2f42;
+  height: 600px;
+
+  color: white;
+}
+
+.baslık .text {
+  font-family: "roboto";
+  line-height: 60px;
+  letter-spacing: 2%;
+
+  color: white;
+  width: 496px;
+  height: 700px;
+  top: 260px;
+  left: 472px;
+  position: absolute;
+  font-size: 56px;
+  text-align: center;
+}
+.baslık > button {
+  background-color: #4d5ae5;
+  color: white;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  top: 428px;
+  left: 636px;
+  position: absolute;
+  cursor: pointer;
+
+  padding: 0;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  gap: 10px;
+}
+.section1 {
+  display: flex;
+  font-family: "roboto";
+  width: 1228px;
+  height: 104px;
+  position: absolute;
+  top: 792px;
+  left: 156px;
+}
+.section1 .text {
+  width: 264px;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+.section1 .text p {
+  height: 72px;
+}
+.our-team {
+  background-color: #f4f4fd;
+  width: 1500px;
+  padding: 60px 20px;
+  text-align: center;
+  height: 732px;
+  position: relative; /* veya absolute, ihtiyacına göre */
+  top: 1016px;
+}
+
+.our-team h2 {
+  font-size: 36px;
+  color: #2e2f42;
+  margin-bottom: 40px;
+}
+
+.our-team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  position: relative;
+  width: 264px;
+  height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 100%;
+  display: block;
+}
+
+.team-info {
+  position: absolute;
+  width: 100%;
+  font-family: "roboto";
+  font-size: 16px;
+  color: #434455;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.team-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #2e2f42;
+  width: 1500px;
+  height: 312px;
+  padding: 60px 20px;
+  position: relative;
+  top: 1748px;
+}
+
+.footer .logo {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: bold;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  line-height: 21px;
+  letter-spacing: 3%;
+}
+.footer .logo a {
+  color: #4d5ae5;
+  margin-left: 156px;
+}
+
+.footer .logo span {
+  color: white;
+  font-size: 18px;
+}
+
+.footer .logo p {
+  width: 264px;
+  line-height: 24px;
+  color: white;
+  margin-left: 156px;
+}
