@@ -94,6 +94,9 @@ body {
   color: #434455;
   text-decoration: none;
 }
+.address ul li a:hover{
+  color: #404BBF;
+}
 
 /* Hero */
 .hero-image {
