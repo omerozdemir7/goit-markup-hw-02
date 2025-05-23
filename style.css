@@ -58,11 +58,17 @@ body {
   font-size: 16px;
   color: #2e2f42;
   text-decoration: none;
-}
 
+}
 .menu li a:hover {
   color: #404bbf;
 }
+
+.menu .studio:active {
+  color: #404BBF;
+  font-weight: bold;
+}
+
 
 .address ul {
   display: flex;
@@ -203,6 +209,7 @@ body {
 
 /* Responsive – Mobil için düzen */
 @media screen and (max-width: 768px) {
+  /* Navbar ve genel bloklar dikey ve ortalanmış */
   .nav,
   .section1,
   .our-team,
@@ -212,17 +219,44 @@ body {
     padding: 20px;
   }
 
-  .menu,
+  /* Menü yataydan dikeye geçiş, ortalanmış */
+  .menu {
+    position: static; /* Absolute pozisyonu kaldır */
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+  }
+
+  /* Menü itemleri dikey hizalanacak */
+  .menu li {
+    text-align: center;
+  }
+
+  /* Adres listesi de dikey ve ortalı */
   .address ul {
+    position: static; /* Absolute kaldır */
     flex-direction: column;
     gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
     align-items: center;
   }
 
+  /* Logo sola yaslanmasın, ortaya gelsin */
+  .logo a {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  /* Başlık alanındaki yazı küçültülsün */
   .baslık .text {
     font-size: 32px;
   }
 
+  /* Takım üyeleri blok genişliği mobilde %100 veya max 300px */
   .team-member {
     width: 100%;
     max-width: 300px;
