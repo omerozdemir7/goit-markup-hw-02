@@ -26,7 +26,7 @@ body {
   align-items: center;
   padding: 0 40px;
   gap: 40px;
-  position: relative; /* position absolute kaldırıldı */
+  position: relative; 
 }
 
 .logo-header a {
@@ -35,7 +35,7 @@ body {
   font-weight: bold;
   color: #4d5ae5;
   text-decoration: none;
-  margin-left: 20px; /* Çok büyük margin küçültüldü */
+  margin-left: 20px; 
   position: absolute;
   top: 24px;
   left: 156px;
@@ -52,10 +52,9 @@ body {
   gap: 40px;
   margin: 0;
   padding: 0;
-  /* position absolute kaldırıldı */
   margin-left: 0;
-  flex: 1; /* Menü alanı esnek olsun */
-  justify-content: center; /* Menü ortalansın */
+  flex: 1; 
+  justify-content: center; 
   position: absolute;
   left: 347px;
   top: 24px;
@@ -82,10 +81,9 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* position absolute kaldırıldı */
-  /* left, top kaldırıldı */
+  
   justify-content: flex-end;
-  flex: 1; /* adres kısmı esnek olsun */
+  flex: 1; 
   position: absolute;
   left: 940px;
   top: 25px;
@@ -108,7 +106,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0px 160px; /* Yatay padding azaltıldı, mobil için uygun */
+  padding: 0px 160px; 
 }
 
 .hero-image .text {
@@ -172,7 +170,7 @@ body {
 
 .team-member {
   width: 100%;
-  max-width: 264px; /* Kart genişliği sınırlandı */
+  max-width: 264px; 
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
@@ -191,7 +189,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 156px; /* Logo bloğunu sağa kaydır */
+  margin-left: 156px; 
   
 }
 
