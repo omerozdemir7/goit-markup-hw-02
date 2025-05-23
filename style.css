@@ -119,7 +119,7 @@ body {
 
 .hero-image > button {
   margin-top: 40px;
-  background-color: #4d5ae5;
+  background-color: #4D5AE5;
   color: white;
   padding: 16px 32px;
   border: none;
@@ -127,6 +127,9 @@ body {
   cursor: pointer;
 }
 
+.hero-image > button:hover{
+  background-color:    #404BBF;
+}
 /* Section 1 */
 .section1 {
   display: flex;
