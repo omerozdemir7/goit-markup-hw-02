@@ -29,16 +29,20 @@ body {
   position: relative; /* position absolute kaldırıldı */
 }
 
-.logo a {
+.logo-header a {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #4d5ae5;
   text-decoration: none;
   margin-left: 20px; /* Çok büyük margin küçültüldü */
+  position: absolute;
+  top: 24px;
+  left: 156px;
+  
 }
 
-.logo a span {
+.logo-header  a span {
   color: #2e2f42;
 }
 
@@ -52,6 +56,9 @@ body {
   margin-left: 0;
   flex: 1; /* Menü alanı esnek olsun */
   justify-content: center; /* Menü ortalansın */
+  position: absolute;
+  left: 347px;
+  top: 24px;
 }
 
 .menu li a {
@@ -79,6 +86,10 @@ body {
   /* left, top kaldırıldı */
   justify-content: flex-end;
   flex: 1; /* adres kısmı esnek olsun */
+  position: absolute;
+  left: 940px;
+  top: 25px;
+
 }
 
 .address ul li a {
@@ -174,25 +185,28 @@ body {
   padding: 60px 40px;
   color: white;
   max-width: 1440px;
-  
-  
-  
 }
 
 .footer .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #4d5ae5;
-  text-decoration: none;
-  margin-bottom: 20px;
-  display: inline-block;
-  margin-left: 156px;
-  gap: 10px;
+  margin-left: 156px; /* Logo bloğunu sağa kaydır */
+  
 }
 
-.footer .logo span {
+.footer .logo a {
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  margin-bottom: 20px;
+  
+}
+
+.footer .logo a span {
   color: white;
+  
 }
 
 .footer .logo p {
@@ -203,112 +217,10 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  margin: 0 auto;
-  padding: 0 20px;
-  margin-top: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Responsive – Mobil için düzenleme */
-@media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-    height: auto;
-  }
 
-  .logo {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
 
-  .logo a {
-    margin-left: 0;
-    font-size: 22px;
-    display: inline-block;
-  }
 
-  .menu {
-    position: static !important;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    max-width: 320px;
-    padding: 0;
-    margin: 0 auto 20px auto;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-  }
-
-  .menu li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu li a {
-    font-size: 18px;
-    display: block;
-    width: 100%;
-  }
-
-  .address ul {
-    position: static;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .address ul li a {
-    font-size: 14px;
-  }
-
-  /* Hero image yazı ve buton küçültme */
-  .hero-image {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero-image .text {
-    font-size: 28px;
-    max-width: 90%;
-  }
-
-  .hero-image > button {
-    padding: 12px 24px;
-    font-size: 16px;
-  }
-
-  /* Our Team kart genişliği mobilde %90 */
-  .team-member {
-    max-width: 90%;
-  }
-
-  /* Section1 bloklar dikey ve genişlik %90 */
-  .section1 {
-    flex-direction: column;
-    max-width: 100%;
-    padding: 20px 10px;
-  }
-
-  .section1 .block {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
-  /* Footer padding küçültüldü */
-  .footer {
-    padding: 40px 20px;
-  }
-
-  .footer .logo p {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-}
