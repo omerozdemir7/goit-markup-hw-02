@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  
+  gap: 40px; /* Menü ve adres arası boşluk */
 }
 
 
@@ -34,8 +34,7 @@ body {
   font-weight: bold;
   color: #4d5ae5;
   text-decoration: none;
- margin-left: 156px;
-
+  margin-left: 156px;
 }
 
 .logo a span {
@@ -43,13 +42,13 @@ body {
 }
 
 .menu {
-  
   list-style: none;
   display: flex;
   gap: 40px;
- 
-  left: 347px;
-  position: absolute;
+  position: absolute; /* absolute kaldırıldı */
+  margin: 0;
+  padding: 0;
+  margin-left: 347px;
 }
 
 .menu li a {
@@ -74,10 +73,12 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
-  position: absolute;
+  margin: 0;
+  padding: 0;
+  position: absolute; 
   left: 940px;
-  top: 12px;
- 
+  top: 24px;
+
 }
 
 
@@ -88,25 +89,30 @@ body {
 }
 
 /* Başlık (Hero) Alanı */
-.baslık {
+.hero-image {
   background-color: #2e2f42;
-  margin: 0 auto;
+  max-width: 1200px; /* İstersen burayı istediğin gibi ayarla */
   height: 600px;
+  margin: 0 auto; /* Ortalamak için */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0px 161px;
+  
+  
 }
 
-.baslık .text {
+
+.hero-image .text {
   color: white;
   font-size: 56px;
   max-width: 496px;
   margin: 0;
 }
 
-.baslık > button {
+.hero-image > button {
   margin-top: 40px;
   background-color: #4d5ae5;
   color: white;
@@ -135,9 +141,11 @@ body {
   flex: 1 1 200px;
   min-width: 200px;
   
+  
 }
 .text p{
   font-weight: 400;
+  
 }
 
 /* Our Team */
@@ -148,12 +156,15 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   height: 600px;
+  align-items: center;
+  
 }
 
 .our-team h2 {
   font-size: 36px;
   margin-bottom: 40px;
   color: #2e2f42;
+  
 }
 
 .our-team-cards {
@@ -161,7 +172,10 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
+  height: 380px;
+  width: 100%; 
 }
+
 
 .team-member {
   width: 264px;
@@ -169,7 +183,11 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  
+  
+  
 }
+
 
 /* Footer */
 .footer {
@@ -209,32 +227,41 @@ body {
 
 /* Responsive – Mobil için düzen */
 @media screen and (max-width: 768px) {
-  /* Navbar ve genel bloklar dikey ve ortalanmış */
-  .nav,
-  .section1,
-  .our-team,
-  .footer {
+  .nav {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    height: auto; /* Yükseklik sabitleme, içeriğe göre esnek olsun */
   }
 
-  /* Menü yataydan dikeye geçiş, ortalanmış */
+  .logo a {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 20px; /* İstersen biraz büyütebilirsin */
+  }
+
   .menu {
-    position: static; /* Absolute pozisyonu kaldır */
-    gap: 20px;
+    position: static; /* Absolute kaldır */
+    flex-direction: column; /* Menü dikey olsun */
+    gap: 15px;
+    margin: 20px 0;
     justify-content: center;
-    margin: 20px 0 10px 0;
+    align-items: center;
   }
 
-  /* Menü itemleri dikey hizalanacak */
   .menu li {
     text-align: center;
+    width: 100%;
   }
 
-  /* Adres listesi de dikey ve ortalı */
+  .menu li a {
+    font-size: 18px; /* Mobilde biraz büyüt */
+  }
+
   .address ul {
-    position: static; /* Absolute kaldır */
+    position: static;
     flex-direction: column;
     gap: 10px;
     margin: 0;
@@ -243,22 +270,8 @@ body {
     align-items: center;
   }
 
-  /* Logo sola yaslanmasın, ortaya gelsin */
-  .logo a {
-    margin-left: 0;
-    text-align: center;
-    display: block;
-    width: 100%;
-  }
-
-  /* Başlık alanındaki yazı küçültülsün */
-  .baslık .text {
-    font-size: 32px;
-  }
-
-  /* Takım üyeleri blok genişliği mobilde %100 veya max 300px */
-  .team-member {
-    width: 100%;
-    max-width: 300px;
+  .address ul li a {
+    font-size: 14px;
   }
 }
+
