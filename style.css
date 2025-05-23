@@ -157,6 +157,9 @@ body {
   margin: 0 auto;
   height: 600px;
   align-items: center;
+  min-height: 600px; /* opsiyonel */
+  height: 600; /* yükseklik kaldırıldı */
+  padding-bottom: 60px; /* footer ile arada boşluk */
   
 }
 
@@ -172,7 +175,7 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
-  height: 380px;
+  height: auto; /* sabit yükseklik kaldırıldı */
   width: 100%; 
 }
 
@@ -195,8 +198,9 @@ body {
   padding: 60px 40px;
   color: white;
   max-width: 1440px;
-  margin: 0 auto;
+  
 }
+
 
 .footer .logo {
   font-family: "Raleway", sans-serif;
@@ -231,33 +235,44 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    height: auto; /* Yükseklik sabitleme, içeriğe göre esnek olsun */
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .logo a {
     margin-left: 0;
-    text-align: center;
-    display: block;
-    width: 100%;
-    font-size: 20px; /* İstersen biraz büyütebilirsin */
+    font-size: 20px;
+    display: inline-block;
   }
 
   .menu {
-    position: static; /* Absolute kaldır */
-    flex-direction: column; /* Menü dikey olsun */
+    position: static !important; /* Absolute’ı kaldır */
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    margin: 20px 0;
+    width: 100%;
+    max-width: 320px;
+    padding: 0;
+    margin: 0 auto 20px auto;
     justify-content: center;
     align-items: center;
+    list-style: none;
   }
 
   .menu li {
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
 
   .menu li a {
-    font-size: 18px; /* Mobilde biraz büyüt */
+    font-size: 18px;
+    display: block;
+    width: 100%;
   }
 
   .address ul {
