@@ -17,9 +17,9 @@
   --second-family: "Raleway", sans-serif;
 }
 
-*{
+* {
   margin: 0 auto;
-  padding:0;
+  padding: 0;
 }
 
 body {
@@ -191,14 +191,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  
+
   width: 100%;
   height: auto;
 }
-.team-info{
+.team-info {
   height: 96px;
   margin-top: 20px;
-  
 }
 
 .team-member {
@@ -210,7 +209,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 .our-portfolio {
   width: 1128px;
   height: 1000px;
@@ -219,9 +217,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-
 
 .our-portfolio h2 {
   display: block;
@@ -236,11 +233,10 @@ body {
   color: var(--navy-blue);
 }
 
-
 .our-portfolio-list {
   display: flex;
-  flex-wrap: wrap;         /* Satır satır dizilmesini sağlar */
-  
+  flex-wrap: wrap; /* Satır satır dizilmesini sağlar */
+
   list-style: none;
   justify-content: center; /* Ortaya hizalar */
   padding: 0;
@@ -250,29 +246,17 @@ body {
 .our-portfolio-card {
   width: calc(33.333% - 20px); /* Her satıra 3 tane sığacak şekilde */
   box-sizing: border-box;
-  
-  
 }
-.portfolio-info{
+.portfolio-info {
   border: 1px solid var(--cornflower); /* örnek: siyah kenarlık */
-  padding: 32px 16px  ;
+  padding: 32px 16px;
   gap: 8px;
-  
-  
-  
-  
-  
 }
 
 .our-portfolio-card img {
-  
   height: 300px;
   object-fit: cover;
-  
 }
-
-
-
 
 /* Footer başlangıç */
 
