@@ -209,54 +209,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.our-portfolio {
-  width: 1128px;
-  height: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.our-portfolio h2 {
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--navy-blue);
-}
-
-.our-portfolio-list {
-  display: flex;
-  flex-wrap: wrap; /* Satır satır dizilmesini sağlar */
-
-  list-style: none;
-  justify-content: center; /* Ortaya hizalar */
-  padding: 0;
-  margin: 0;
-}
-
-.our-portfolio-card {
-  width: calc(33.333% - 20px); /* Her satıra 3 tane sığacak şekilde */
-  box-sizing: border-box;
-}
-.portfolio-info {
-  border: 1px solid var(--cornflower); /* örnek: siyah kenarlık */
-  padding: 32px 16px;
-  gap: 8px;
-}
-
-.our-portfolio-card img {
-  height: 300px;
-  object-fit: cover;
-}
 
 /* Footer başlangıç */
 
