@@ -1,6 +1,29 @@
-/* Genel ayarlar ve body */
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+*{
+  margin: 0 auto;
+  padding:0;
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 72px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -14,7 +37,8 @@ body {
   left: 0;
   z-index: 1000;
   background-color: #ffffff;
-  border-bottom: 1px rgba(231, 233, 252, 1);
+  border-bottom: 1px solid rgba(231, 233, 252, 1);
+  margin: 0 auto;
 }
 
 .nav {
@@ -29,19 +53,19 @@ body {
   position: relative;
 }
 
-.logo-header a {
+.logo-header {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #4d5ae5;
   text-decoration: none;
-  margin-left: 20px;
   position: absolute;
   top: 24px;
   left: 156px;
+  margin: 0 auto;
 }
 
-.logo-header a span {
+.logo-header span {
   color: #2e2f42;
 }
 
@@ -78,19 +102,19 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 
   justify-content: flex-end;
   flex: 1;
   position: absolute;
   left: 940px;
   top: 25px;
+  margin: 0 auto;
 }
 
 .address ul li a {
   color: #434455;
   text-decoration: none;
+  display: flex;
 }
 .address ul li a:hover {
   color: #404bbf;
@@ -107,7 +131,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0px 160px;
+  padding: 0 160px;
 }
 
 .hero-image .text {
@@ -131,10 +155,11 @@ body {
 .hero-image > button:hover {
   background-color: #404bbf;
 }
+
 /* Section 1 */
 .section1 {
   display: flex;
-  flex-wrap: wrap;
+
   max-width: 1228px;
   margin: 40px auto;
   padding: 20px;
@@ -142,15 +167,14 @@ body {
   align-items: center;
 }
 
-.section1 .block {
-  flex: 1 1 200px;
-  min-width: 200px;
+.section1 ul {
+  list-style: none;
 }
 
 /* Our Team */
 .our-team {
   background-color: #f4f4fd;
-  padding: 60px 40px 60px 40px;
+  padding: 60px 40px;
   text-align: center;
   max-width: 1440px;
   margin: 0 auto;
@@ -163,13 +187,18 @@ body {
   color: #2e2f42;
 }
 
-.our-team-cards {
+.our-team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  justify-content: center;
+  
   width: 100%;
   height: auto;
+}
+.team-info{
+  height: 96px;
+  margin-top: 20px;
+  
 }
 
 .team-member {
@@ -181,44 +210,107 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Footer */
+
+.our-portfolio {
+  width: 1128px;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.our-portfolio h2 {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;         /* Satır satır dizilmesini sağlar */
+  
+  list-style: none;
+  justify-content: center; /* Ortaya hizalar */
+  padding: 0;
+  margin: 0;
+}
+
+.our-portfolio-card {
+  width: calc(33.333% - 20px); /* Her satıra 3 tane sığacak şekilde */
+  box-sizing: border-box;
+  
+  
+}
+.portfolio-info{
+  border: 1px solid var(--cornflower); /* örnek: siyah kenarlık */
+  padding: 32px 16px  ;
+  gap: 8px;
+  
+  
+  
+  
+  
+}
+
+.our-portfolio-card img {
+  
+  height: 300px;
+  object-fit: cover;
+  
+}
+
+
+
+
+/* Footer başlangıç */
+
 .footer {
   background-color: #2e2f42;
   padding: 60px 40px;
   color: white;
   max-width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer .logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-
-  text-align: center;
+  align-items: center;
   margin: 0 auto;
 }
-
 .footer .logo a {
   color: #4d5ae5;
   text-decoration: none;
   margin-bottom: 20px;
   display: block;
+  margin-left: 156px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
 }
 
-.footer .logo a span {
+.logo a span {
   color: white;
 }
 
-.footer .logo p {
+.footer p {
   font-family: "Roboto", sans-serif;
-  max-width: 264px;
   color: white;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  margin: 0 auto;
-  text-align: center;
+  width: 264px;
+  height: 112px;
+  text-align: justify;
+  margin-left: 156px;
+  position: static;
 }
+/* Footer Bitiş */
